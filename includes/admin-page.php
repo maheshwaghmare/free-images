@@ -12,16 +12,11 @@ defined( 'ABSPATH' ) or exit;
 <div class="wrap free-images">
 
 	<div class="wp-header">
-		<a href="https://pixabay.com/">
-			<i><img src="<?php echo FREE_IMAGES_URI; ?>assets/images/pixabay-logo.svg"></i><?php _e( 'Free Images', 'free-images' ); ?>
-		</a>
-
 		<div class="search-form">
 			<label class="screen-reader-text" for="search-image"><?php _e( 'Free Images', 'free-images' ); ?></label>
 			<input placeholder="<?php _e( 'Search images...', 'free-images' ); ?>" type="search" aria-describedby="live-search-desc" id="search-image">
 		</div>
 	</div>
-
 
 	<div class="wp-filter hide-if-no-js">
 		<div class="filter-count">
@@ -74,20 +69,12 @@ defined( 'ABSPATH' ) or exit;
 	<# if( data ) { #>
 		<div class="image">
 			<div class="inner">
-				<a class="lightbox" data-user-image="{{data.userImageURL}}" data-url="{{data.webformatURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
+				<a class="lightbox" data-id="{{data.id}}" data-preview-url="{{data.previewURL}}" data-user-image="{{data.userImageURL}}" data-url="{{data.webformatURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
 					<img class="lazy" data-src="{{data.webformatURL}}" /></a>
 					<noscript>
 						<img src="{{data.webformatURL}}" />
 					</noscript>
-					<div class="top-meta">
-						<span class="favorites"><span class="fa fa-star"></span>{{data.favorites}}</span>
-						<span class="comments"><span class="fa fa-comments"></span> {{data.comments}}</span>
-						<a href="{{data.pageURL}}" class="external"><span class="fa fa-external-link"></span></a>
-					</div>
-				<div data-url="{{data.webformatURL}}" class="download" data-user-name="{{data.user}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
-					<span class="fa fa-download"></span><br/>
-					<span class="resolution">{{data.imageWidth}} x {{data.imageHeight}}</span>
-				</div>
+				<div data-url="{{data.webformatURL}}" class="preview-and-download" data-user-name="{{data.user}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}"></div>
 				<div class="meta">
 					<span class="user" data-user-id="{{data.user_id}}">
 						<img src="{{data.userImageURL}}" class="user-image-url">
