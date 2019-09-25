@@ -15,9 +15,12 @@
 		 */
 		_bind: function()
 		{
+			$( window ).on('resize', 		FreeImages._masonaryInit );
+
 			// Download image.
 			$( document ).on('click', '#free-images .download', 		FreeImages._download );
 			$( document ).on('click', '.mfp-title .download', 				FreeImages._download );
+			$( document ).on('click', '.download-size', 				FreeImages._download );
 
 			// Filter click, select or search image.
 			$( document ).on('keyup', '#search-image', 						FreeImages._search );
@@ -191,7 +194,43 @@
 				image: {
 					tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
 					titleSrc: function(item) {
-						return '<img style="width: 20px;" src="'+item.el.attr('data-user-image')+'" />' + '<small>by '+item.el.attr('data-user')+'</small><div data-url="'+item.el.attr('data-url')+'" class="download" data-user-name="'+item.el.attr('data-user-name')+'" data-user-url="'+item.el.attr('data-user-url')+'" data-page-url="'+item.el.attr('data-page-url')+'">Download</div>';
+						var preview_url = item.el.attr('data-preview-url') || '';
+
+						var image_640_url      = preview_url.replace('_150.', '_640.'); // 'https://cdn.pixabay.com/photo/2019/09/13/14/31/elephant-4474027_640.jpg';
+						var image_1280_url     = preview_url.replace('_150.', '_1280.'); // 'https://cdn.pixabay.com/photo/2019/09/13/14/31/elephant-4474027_1280.jpg';
+						var image_1920_url     = preview_url.replace('_150.', '_1920.'); // 'https://cdn.pixabay.com/photo/2019/09/13/14/31/elephant-4474027_1920.jpg';
+						var image_original_url = preview_url.replace('_150.', '.'); // 'https://cdn.pixabay.com/photo/2019/09/13/14/31/elephant-4474027.jpg';
+						
+						var markup = '';
+						markup += '<div class="free-images-sizes">';
+						markup += '    <h3>Image Sizes</h3>';
+						markup += '    <ul>';
+						markup += '		<li>';
+						markup += '			<span>';
+						markup += '				<span class="size">640xauto</span><span data-user-name="'+item.el.attr('data-user-name')+'" data-user-url="'+item.el.attr('data-user-url')+'" data-page-url="'+item.el.attr('data-page-url')+'" data-url="'+image_640_url+'" class="download-size">Download</span>';
+						markup += '			</span>';
+						markup += '		</li>';
+						markup += '		<li>';
+						markup += '			<span>';
+						markup += '				<span class="size">1280xauto</span><span data-user-name="'+item.el.attr('data-user-name')+'" data-user-url="'+item.el.attr('data-user-url')+'" data-page-url="'+item.el.attr('data-page-url')+'" data-url="'+image_1280_url+'" class="download-size">Download</span>';
+						markup += '			</span>';
+						markup += '		</li>';
+						// To get more HD images pixabay have the premium plan.
+						// We need to contact them. We'll add this feature in future.
+						// markup += '		<li>';
+						// markup += '			<span>';
+						// markup += '				<span class="size" data-url="'+image_1920_url+'" data-size="1920">1920xauto</span><span class="download-size">Download</span>';
+						// markup += '			</span>';
+						// markup += '		</li>';
+						// markup += '		<li>';
+						// markup += '			<span>';
+						// markup += '				<span class="size" data-url="'+image_original_url+'" data-size="original">Original</span><span class="download-size">Download</span>';
+						// markup += '			</span>';
+						// markup += '		</li>';
+						markup += '	</ul>';
+						markup += '</div>';
+
+						return markup + '<img style="width: 20px;" data-id="'+item.el.attr('data-id')+'" src="'+item.el.attr('data-user-image')+'" />' + '<small>by '+item.el.attr('data-user')+'</small><div data-url="'+item.el.attr('data-url')+'" class="download" data-user-name="'+item.el.attr('data-user-name')+'" data-user-url="'+item.el.attr('data-user-url')+'" data-page-url="'+item.el.attr('data-page-url')+'">Download</div>';
 					}
 				}
 			});
