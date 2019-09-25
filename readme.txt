@@ -2,7 +2,7 @@
 Contributors: Mahesh901122
 Tags: pixabay, pixabay images, free images, free stock images, image search, images, photos, stock images, royalty free images
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 5.2
+Tested up to: 5.2.3
 Stable tag: 1.0.1
 Requires at least: 4.4
 
