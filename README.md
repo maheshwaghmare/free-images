@@ -53,9 +53,6 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 * New: Added 1280xauto image size download option.
 * Improvements: Removed unwanted markup and improve the UI.
 
-
-* Improvements: Images takes too much time while loading due to large images.
-
 = 1.0.1 =
 * Improvements: Images takes too much time while loading due to large images.
 
