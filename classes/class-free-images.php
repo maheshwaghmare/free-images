@@ -55,8 +55,8 @@ if ( ! class_exists( 'Free_Images' ) ) :
 		function add_admin_menu() {
 			add_submenu_page(
 				'upload.php',
-				__( 'Free Images', 'free-images' ),
-				__( 'Free Images', 'free-images' ),
+				__( 'Download Images', 'free-images' ),
+				__( 'Download Images', 'free-images' ),
 				'manage_options',
 				'free-images',
 				array( $this, 'menu_callback' )
@@ -79,7 +79,7 @@ if ( ! class_exists( 'Free_Images' ) ) :
 		 */
 		function action_links( $links ) {
 			$action_links = array(
-				'settings' => '<a href="' . admin_url( 'upload.php?page=free-images' ) . '" aria-label="' . esc_attr__( 'Get Started', 'free-images' ) . '">' . esc_html__( 'Get Started', 'free-images' ) . '</a>',
+				'settings' => '<a href="' . admin_url( 'upload.php?page=free-images' ) . '" aria-label="' . esc_attr__( 'See Library', 'free-images' ) . '">' . esc_html__( 'See Library', 'free-images' ) . '</a>',
 			);
 
 			return array_merge( $action_links, $links );

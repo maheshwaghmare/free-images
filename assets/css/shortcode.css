@@ -75,13 +75,14 @@
  * Filters
  */
 .free-images .search-form {
-    margin-top: 7px;
-    display: inline-block;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 .free-images .search-form input {
     font-size: 20px;
     padding: 7px 17px;
-    width: 270px;
+    width: 100%;
+    max-width: 500px;
 }
 .free-images .filter-categories {
     margin-left: 1em;

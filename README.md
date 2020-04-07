@@ -2,27 +2,31 @@
 Contributors: Mahesh901122
 Tags: pixabay, pixabay images, free images, free stock images, image search, images, photos, stock images, royalty free images
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 5.2.3
-Stable tag: 1.1.0
+Tested up to: 5.4
+Stable tag: 1.1.1
 Requires at least: 4.4
 
 Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
 
 == Description ==
 
+Are you looking for royalty free images?
+
+Then, Simply search your favorite images from millions of images.
+
 Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
 
-= Features include: =
+= Features: =
 
-- Easy to Search from 1.4+ million images.
-- Direct upload image into WordPress media library.
-- Automatically set the image TITLE tag
-- Automatically set the image ALT tag
-- Automatically Image attribution (of image author) in image description field.
-- Automatically create the SEO friendly image names.
-- Download image in different sizes.
+- Easy search from 1.4+ millions of images.
+- Direct download into media library.
+- Automatically set the image TITLE tag for SEO purpose.
+- Automatically set the image ALT tag for SEO purpose.
+- Automatically Image attribution (of original image author) in image description field for SEO purpose.
+- Automatically create SEO ready images names.
+- Download images in different sizes.
 - 100% safe, model released images.
-- Image attribution automatically added.
+- Easy lightbox navigation to see multiple images.
 
 == Installation ==
 
@@ -41,12 +45,16 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 
 == Screenshots ==
 
-1. Click on 'Get Started'.
+1. Click on 'See Library'.
 2. Browse/Search image by category/name.
 3. Click on image to see in lightbox.
 4. Click on 'Download' to download the image.
 
 == Changelog ==
+
+= 1.1.1 =
+* Improvement: Showing images with 500 ms timeout.
+* Improvement: Added WordPress compatibility 5.4.
 
 = 1.1.0 =
 * New: Added 640xauto image size download option.
