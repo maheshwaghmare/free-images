@@ -2,6 +2,8 @@
 
 	FreeImages = {
 
+		_ref: null,
+
 		init: function()
 		{
 			this._masonaryInit();
@@ -23,7 +25,7 @@
 			$( document ).on('click', '.download-size', 				FreeImages._download );
 
 			// Filter click, select or search image.
-			$( document ).on('keyup', '#search-image', 						FreeImages._search );
+			$( document ).on('keyup input', '#search-image', 						FreeImages._search );
 			$( document ).on('click', '.filter-links a', 					FreeImages._filter_links );
 			$( document ).on('change', '.filter-categories', 				FreeImages._filter_change );
 
@@ -203,7 +205,7 @@
 						
 						var markup = '';
 						markup += '<div class="free-images-sizes">';
-						markup += '    <h3>Image Sizes</h3>';
+						markup += '    <h3>Other Image Sizes</h3>';
 						markup += '    <ul>';
 						markup += '		<li>';
 						markup += '			<span>';
@@ -258,9 +260,14 @@
 		 * Search
 		 */
 		_search: function( event ) {
-			if( event.keyCode == 13 ){
-	        	FreeImages._loadImages();
-	        }
+
+			window.clearTimeout(FreeImages._ref);
+			FreeImages._ref = window.setTimeout(function () {
+				FreeImages._ref = null;
+
+				FreeImages._loadImages();
+
+			}, 500);
 		},
 
 		/**

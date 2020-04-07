@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Free Images
+ * Plugin Name: Download Free Images
  * Description: Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
  * Plugin URI: https://profiles.wordpress.org/mahesh901122/
  * Author: Mahesh M. Waghmare
- * Author URI: https://maheshwaghmare.wordpress.com/
- * Version: 1.1.0
+ * Author URI: https://maheshwaghmare.com/
+ * Version: 1.1.1
  * License: GNU General Public License v2.0
  * Text Domain: free-images
  *
@@ -15,7 +15,7 @@
 /**
  * Set constants.
  */
-define( 'FREE_IMAGES_VER', '1.1.0' );
+define( 'FREE_IMAGES_VER', '1.1.1' );
 define( 'FREE_IMAGES_FILE', __FILE__ );
 define( 'FREE_IMAGES_BASE', plugin_basename( FREE_IMAGES_FILE ) );
 define( 'FREE_IMAGES_DIR', plugin_dir_path( FREE_IMAGES_FILE ) );

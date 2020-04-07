@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) or exit;
 	<div class="wp-header">
 		<div class="search-form">
 			<label class="screen-reader-text" for="search-image"><?php _e( 'Free Images', 'free-images' ); ?></label>
-			<input placeholder="<?php _e( 'Search images...', 'free-images' ); ?>" type="search" aria-describedby="live-search-desc" id="search-image">
+			<input placeholder="<?php _e( 'Search your favorite images..', 'free-images' ); ?>" type="search" aria-describedby="live-search-desc" id="search-image">
 		</div>
 	</div>
 
