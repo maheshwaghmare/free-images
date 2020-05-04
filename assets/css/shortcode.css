@@ -303,3 +303,24 @@
 .free-images-sizes li:last-child {
     margin-bottom: 0;
 }
+
+.free-images .wp-header .links a {
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+}
+
+.free-images .search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.free-images .wp-header .links i {
+    width: auto;
+    font-size: initial;
+    margin-left: 5px;
+}

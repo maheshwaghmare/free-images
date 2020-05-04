@@ -261,9 +261,9 @@ if ( ! class_exists( 'Free_Images' ) ) :
 				'post_title'     => preg_replace( '/\.[^.]+$/', '', basename( $file_abs_url ) ),
 				'post_status'    => 'inherit',
 				'post_title'     => ucwords( $image_name ),
-				'post_excerpt'   => '<a href="' . $args['user_url'] . '">' . $args['user_name'] . '</a> / Pixabay',
+				'post_excerpt'   => '<a href="' . $args['user_url'] . '">' . $args['user_name'] . '</a> / Pixabay <span class="info"><a href="https://maheshwaghmare.com/?p=8155" target="_blank" style="border:none;"><svg style="width: 14px;display:inline-block;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15 15"><path d="M7.5,1.5a6,6,0,1,0,0,12a6,6,0,1,0,0,-12m0,1a5,5,0,1,1,0,10a5,5,0,1,1,0,-10ZM6.625,11l1.75,0l0,-4.5l-1.75,0ZM7.5,3.75a1,1,0,1,0,0,2a1,1,0,1,0,0,-2Z"></path></svg></a></span>',
 				'meta_input'     => array(
-					'_wp_attachment_image_alt' => ucwords( $image_name ),
+					'_wp_attachment_image_alt' => ucwords( $image_name ) . ' - ' . $args['user_name'] . ' / Pixabay',
 				),
 			);
 

@@ -15,6 +15,15 @@ defined( 'ABSPATH' ) or exit;
 		<div class="search-form">
 			<label class="screen-reader-text" for="search-image"><?php _e( 'Free Images', 'free-images' ); ?></label>
 			<input placeholder="<?php _e( 'Search your favorite images..', 'free-images' ); ?>" type="search" aria-describedby="live-search-desc" id="search-image">
+
+			<div class="links">
+				<ul>
+					<li>
+						<a href="https://maheshwaghmare.com/?p=8155" target="_blank"><?php esc_html_e( 'Quick Start Guide', 'free-images' ); ?> <i class="dashicons dashicons-external"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
