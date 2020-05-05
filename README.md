@@ -53,7 +53,7 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 == Changelog ==
 
 = 1.2.1 =
-* Improvement: Register the download images page only for the `upload_files` user permissions.
+* Improvement: Register the download images page only for the `upload_files` user permissions. Reported by Steve.
 
 = 1.2.0 =
 * Improvement: Added the original author name into the alt tag of image.
