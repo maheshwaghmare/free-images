@@ -57,7 +57,7 @@ if ( ! class_exists( 'Free_Images' ) ) :
 				'upload.php',
 				__( 'Download Images', 'free-images' ),
 				__( 'Download Images', 'free-images' ),
-				'manage_options',
+				'upload_files',
 				'free-images',
 				array( $this, 'menu_callback' )
 			);

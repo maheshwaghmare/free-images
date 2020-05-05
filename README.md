@@ -3,7 +3,7 @@ Contributors: Mahesh901122
 Tags: pixabay, pixabay images, free images, free stock images, image search, images, photos, stock images, royalty free images
 Donate link: https://www.paypal.me/mwaghmare7/
 Tested up to: 5.4
-Stable tag: 1.2.0
+Stable tag: 1.2.1
 Requires at least: 4.4
 
 Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
@@ -51,6 +51,9 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 4. Click on 'Download' to download the image.
 
 == Changelog ==
+
+= 1.2.1 =
+* Improvement: Register the download images page only for the `upload_files` user permissions.
 
 = 1.2.0 =
 * Improvement: Added the original author name into the alt tag of image.
