@@ -169,7 +169,7 @@
 					var template = wp.template( 'free-images-found-images' );
 					var search_term = $( '#search-image' ).val() || '';
 					if( search_term ) {
-						$('.search-form').append( template( { search_term : search_term, total : data.total }) );
+						$('.wp-header').append( template( { search_term : search_term, total : data.total }) );
 					}
 
                     FreeImages._initLightbox();

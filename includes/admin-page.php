@@ -76,14 +76,15 @@ defined( 'ABSPATH' ) or exit;
 ?>
 <script type="text/template" id="tmpl-free-images-list">
 	<# if( data ) { #>
+	<# console.log( data ); #>
 		<div class="image">
 			<div class="inner">
-				<a class="lightbox" data-id="{{data.id}}" data-preview-url="{{data.previewURL}}" data-user-image="{{data.userImageURL}}" data-url="{{data.webformatURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
+				<a class="lightbox" data-id="{{data.id}}" data-preview-url="{{data.previewURL}}" data-user-image="{{data.userImageURL}}" data-url="{{data.largeImageURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
 					<img class="lazy" data-src="{{data.webformatURL}}" /></a>
 					<noscript>
 						<img src="{{data.webformatURL}}" />
 					</noscript>
-				<div data-url="{{data.webformatURL}}" class="preview-and-download" data-user-name="{{data.user}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}"></div>
+				<div data-url="{{data.largeImageURL}}" class="preview-and-download" data-user-name="{{data.user}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}"></div>
 				<div class="meta">
 					<span class="user" data-user-id="{{data.user_id}}">
 						<img src="{{data.userImageURL}}" class="user-image-url">
