@@ -76,7 +76,6 @@ defined( 'ABSPATH' ) or exit;
 ?>
 <script type="text/template" id="tmpl-free-images-list">
 	<# if( data ) { #>
-	<# console.log( data ); #>
 		<div class="image">
 			<div class="inner">
 				<a class="lightbox" data-id="{{data.id}}" data-preview-url="{{data.previewURL}}" data-user-image="{{data.userImageURL}}" data-url="{{data.largeImageURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">

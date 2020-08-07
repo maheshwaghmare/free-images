@@ -1,6 +1,6 @@
 <?php
 /**
- * Free Images Shortcode
+ * Free Images
  *
  * @package Free Images
  * @since 1.0.0
@@ -9,7 +9,7 @@
 if ( ! class_exists( 'Free_Images' ) ) :
 
 	/**
-	 * Free_Images
+	 * Free Images
 	 *
 	 * @since 1.0.0
 	 */

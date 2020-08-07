@@ -1,12 +1,12 @@
-=== Pixabay Free Images - 1.4+ Million CCO public domain Images ===
+=== Pixabay Free Images - 1.8+ Million CCO public domain Images ===
 Contributors: Mahesh901122
-Tags: pixabay, pixabay images, free images, free stock images, image search, images, photos, stock images, royalty free images
+Tags: pixabay, stock images, images, photos, royalty images
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 5.4
+Tested up to: 5.5
 Stable tag: 1.2.2
 Requires at least: 4.4
 
-Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
+Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.8 million royalty free stock photos.
 
 == Description ==
 
@@ -14,11 +14,14 @@ Are you looking for royalty free images?
 
 Then, Simply search your favorite images from millions of images.
 
-Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
+Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.8 million royalty free stock photos.
+
+Read more in [one page quick documentation](https://maheshwaghmare.com/doc/free-images/).
 
 = Features: =
 
-- Easy search from 1.4+ millions of images.
+- Zero configuration
+- Easy search from 1.8+ millions of images.
 - Direct download into media library.
 - Automatically set the image TITLE tag for SEO purpose.
 - Automatically set the image ALT tag for SEO purpose.
@@ -27,6 +30,26 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 - Download images in different sizes.
 - 100% safe, model released images.
 - Easy lightbox navigation to see multiple images.
+- Quick support
+
+**Welcome for featured requests**
+
+If you have any suggestion or any featured request then don't hesitate to [contact](https://maheshwaghmare.com/say-hello/).
+
+=== Bug reports
+
+Bug reports for "Pixabay Free Images" are welcomed in our [repository on GitHub](https://github.com/maheshwaghmare/free-images/). Please note that GitHub is not a support forum, and that issues that are not properly qualified as bugs will be closed.
+
+=== Further reading
+
+For more info check out the following:
+
+* The [maheshwaghmare.com](https://maheshwaghmare.com/) official website.
+* The [Contact Me](https://maheshwaghmare.com/say-hello/).
+* The [Getting started guide](https://maheshwaghmare.com/doc/free-images/).
+* Other my [WordPress Plugins](https://wordpress.org/plugins/search/mahesh901122/).
+* Contribute with [development](https://github.com/maheshwaghmare/free-images/).
+* Make a [small donation](https://www.paypal.me/mwaghmare7/).
 
 == Installation ==
 
@@ -42,7 +65,6 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 2. Unzip downloaded archive and upload `free-images` folder under your `/wp-content/plugins/` directory (resulted plugin path should be `/wp-content/plugins/free-images/**`);
 3. Navigate to `Dashboard > Plugins` and activate the plugin.
 
-
 == Screenshots ==
 
 1. Click on 'See Library'.
@@ -51,6 +73,9 @@ Download royalty free images/photos under CC0 public domain for your own blog. S
 4. Click on 'Download' to download the image.
 
 == Changelog ==
+
+= 1.2.3
+* Improvement: Updated compatibility for WordPress 5.5.
 
 = 1.2.2
 * New: Downloaded the 1280xauto image by default. We also have a choice to download the 640xauto image size. Reported by @krstarica.
