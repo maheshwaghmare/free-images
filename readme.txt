@@ -1,12 +1,12 @@
-=== Pixabay Free Images - 1.4+ Million CCO public domain Images ===
+=== Pixabay Free Images - 1.8+ Million CCO public domain Images ===
 Contributors: Mahesh901122
-Tags: pixabay, pixabay images, free images, free stock images, image search, images, photos, stock images, royalty free images
+Tags: pixabay, stock images, images, photos, royalty images
 Donate link: https://www.paypal.me/mwaghmare7/
-Tested up to: 5.4
+Tested up to: 5.5
 Stable tag: 1.2.2
 Requires at least: 4.4
 
-Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
+Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.8 million royalty free stock photos.
 
 == Description ==
 
@@ -14,14 +14,14 @@ Are you looking for royalty free images?
 
 Then, Simply search your favorite images from millions of images.
 
-Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.4 million royalty free stock photos.
+Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.8 million royalty free stock photos.
 
 Read more in [one page quick documentation](https://maheshwaghmare.com/doc/free-images/).
 
 = Features: =
 
 - Zero configuration
-- Easy search from 1.4+ millions of images.
+- Easy search from 1.8+ millions of images.
 - Direct download into media library.
 - Automatically set the image TITLE tag for SEO purpose.
 - Automatically set the image ALT tag for SEO purpose.
@@ -73,6 +73,9 @@ For more info check out the following:
 4. Click on 'Download' to download the image.
 
 == Changelog ==
+
+= 1.2.3
+* Improvement: Updated compatibility for WordPress 5.5.
 
 = 1.2.2
 * New: Downloaded the 1280xauto image by default. We also have a choice to download the 640xauto image size. Reported by @krstarica.
