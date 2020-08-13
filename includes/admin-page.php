@@ -63,6 +63,12 @@ defined( 'ABSPATH' ) or exit;
 			<option value="travel"><?php _e( 'Travel/Vacation', 'free-images' ); ?></option>
 		</select>
 
+		<span class="safesearch">
+			<label>
+				<input type="checkbox" name="SafeSearch" value="1" checked="checked" id="safesearch-input" /> <?php _e( 'SafeSearch', 'free-images' ); ?>
+			</label>
+		</span>
+
 		<span class="page-navigation"></span>
 	</div>
 

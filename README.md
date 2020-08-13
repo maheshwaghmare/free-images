@@ -3,10 +3,10 @@ Contributors: Mahesh901122
 Tags: pixabay, stock images, images, photos, royalty images
 Donate link: https://www.paypal.me/mwaghmare7/
 Tested up to: 5.5
-Stable tag: 1.2.2
+Stable tag: 1.3.0
 Requires at least: 4.4
 
-Download royalty free images/photos under CC0 public domain for your own blog. Select images/photos from 1.8 million royalty free stock photos.
+Stunning free images & royalty free stock for your own blog. Find suitable image as per your need from the 1.8+ million royalty free images library.
 
 == Description ==
 
@@ -22,6 +22,7 @@ Read more in [one page quick documentation](https://maheshwaghmare.com/doc/free-
 
 - Zero configuration
 - Easy search from 1.8+ millions of images.
+- SafeSearch option to get only images suitable for all ages.
 - Direct download into media library.
 - Automatically set the image TITLE tag for SEO purpose.
 - Automatically set the image ALT tag for SEO purpose.
@@ -74,10 +75,13 @@ For more info check out the following:
 
 == Changelog ==
 
-= 1.2.3
+= 1.3.0 =
+* New: Added the SafeSearch option to get only images suitable for all ages. Suggested by @Steve
+
+= 1.2.3 =
 * Improvement: Updated compatibility for WordPress 5.5.
 
-= 1.2.2
+= 1.2.2 =
 * New: Downloaded the 1280xauto image by default. We also have a choice to download the 640xauto image size. Reported by @krstarica.
 * Improvement: Search result string messed up with the quick doc link.
 * Improvement: Removed `<span class="info">…</span>` part form the image caption. Reported by @krstarica
