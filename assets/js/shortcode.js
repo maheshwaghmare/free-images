@@ -106,6 +106,8 @@
 		 */
 		_loadImages: function()
 		{
+			$('#free-images').html( '<div class="loader"></div>' );
+
 			var URL = 'https://pixabay.com/api/?' + $.param( FreeImages._get_api_params() );
 
 			$.ajax({
