@@ -26,6 +26,7 @@
 
 			// Filter click, select or search image.
 			$( document ).on('keyup input', '#search-image', 						FreeImages._search );
+			$( document ).on('click', '#safesearch-input', 					FreeImages._loadImages );
 			$( document ).on('click', '.filter-links a', 					FreeImages._filter_links );
 			$( document ).on('change', '.filter-categories', 				FreeImages._filter_change );
 
@@ -75,7 +76,7 @@
 									 // Accepted values: "true", "false" 
 									 // Default: "false"
 
-				safesearch     : false, // bool   A flag indicating that only images suitable for all ages should be returned. 
+				safesearch     : $('#safesearch-input:checked').length ? true : false, // bool   A flag indicating that only images suitable for all ages should be returned. 
 									 // Accepted values: "true", "false" 
 									 // Default: "false"
 
