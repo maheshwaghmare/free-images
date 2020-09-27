@@ -20,6 +20,7 @@ Read more in [one page quick documentation](https://maheshwaghmare.com/doc/free-
 
 = Features: =
 
+- NEW* Filter images by Color.
 - Zero configuration
 - Easy search from 1.8+ millions of images.
 - SafeSearch option to get only images suitable for all ages.
