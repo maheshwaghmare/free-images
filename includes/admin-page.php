@@ -69,6 +69,55 @@ defined( 'ABSPATH' ) or exit;
 			</label>
 		</span>
 
+		<span class="filter-color-wrap"><span class="select-color-label">Filter by Color </span><span class="selected-color"></span>
+		    <span class="filter-colors-wrap" style="display: none;">
+		    	<span class="filter-colors">
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-grayscale" data-color-name="grayscale"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-transparent" data-color-name="transparent"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-red" data-color-name="red"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-orange" data-color-name="orange"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-yellow" data-color-name="yellow"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-green" data-color-name="green"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-turquoise" data-color-name="turquoise"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-blue" data-color-name="blue"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-lilac" data-color-name="lilac"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-pink" data-color-name="pink"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-white" data-color-name="white"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-gray" data-color-name="gray"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-black" data-color-name="black"></span>
+		            </span>
+		            <span class="filter-color">
+		                <span class="filter-color-name filter-color-brown" data-color-name="brown"></span>
+		            </span>
+		        </span>
+		    </span>
+		</span>
+
 		<span class="page-navigation"></span>
 	</div>
 
@@ -84,8 +133,8 @@ defined( 'ABSPATH' ) or exit;
 	<# if( data ) { #>
 		<div class="image">
 			<div class="inner">
-				<a class="lightbox" data-id="{{data.id}}" data-preview-url="{{data.previewURL}}" data-user-image="{{data.userImageURL}}" data-url="{{data.largeImageURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
-					<img class="lazy" data-src="{{data.webformatURL}}" /></a>
+				<span class="lightbox" data-id="{{data.id}}" data-preview-url="{{data.previewURL}}" data-user-image="{{data.userImageURL}}" data-url="{{data.largeImageURL}}" data-user="{{data.user}}" data-user-name="{{data.user}}" href="{{data.webformatURL}}" data-user-url="https://pixabay.com/users/{{data.user}}" data-page-url="{{data.pageURL}}">
+					<img src="{{data.webformatURL}}" /></span>
 					<noscript>
 						<img src="{{data.webformatURL}}" />
 					</noscript>

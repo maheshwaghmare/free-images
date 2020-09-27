@@ -5,7 +5,7 @@
  * Plugin URI: https://profiles.wordpress.org/mahesh901122/
  * Author: Mahesh M. Waghmare
  * Author URI: https://maheshwaghmare.com/
- * Version: 1.3.0
+ * Version: 1.4.0
  * License: GNU General Public License v2.0
  * Text Domain: free-images
  *
@@ -13,7 +13,7 @@
  */
 
 // Set constants.
-define( 'FREE_IMAGES_VER', '1.3.0' );
+define( 'FREE_IMAGES_VER', '1.4.0' );
 define( 'FREE_IMAGES_FILE', __FILE__ );
 define( 'FREE_IMAGES_BASE', plugin_basename( FREE_IMAGES_FILE ) );
 define( 'FREE_IMAGES_DIR', plugin_dir_path( FREE_IMAGES_FILE ) );

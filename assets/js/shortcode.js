@@ -33,6 +33,19 @@
 			// Next/previous.
 			$( document ).on('click', '.page-navigation .previous-page', 	FreeImages._previous_page );
 			$( document ).on('click', '.page-navigation .next-page', 		FreeImages._next_page );
+			$( document ).on('click', '.select-color-label, .selected-color', 		FreeImages._toggleColorFilters );
+			$( document ).on('click', '.filter-color-name', 		FreeImages._setColorFilter );
+		},
+
+		_toggleColorFilters: function() {
+			$('.filter-colors-wrap').slideToggle();
+		},
+
+		_setColorFilter: function() {
+			var color_name = $( this ).attr( 'data-color-name' ) || '';
+			$('.selected-color').attr( 'data-color-name', color_name ).removeClass().addClass( 'selected-color filter-color-' + color_name );
+			$('.filter-colors-wrap').slideUp();
+			FreeImages._loadImages();
 		},
 
 		/**
@@ -42,6 +55,8 @@
 		 */
 		_get_api_params: function()
 		{
+			var selectedColor = $('.selected-color').attr('data-color-name') || '';
+
 			return {
 				key        	   : '2364315-d08f2d5ef737190f955ae5c11',
 
@@ -69,7 +84,7 @@
 				min_height     : 0, // int    Minimum image height. 
 									 // Default: "0"
 
-				colors         : '', // str    Filter images by color properties. A comma separated list of values may be used to select multiple properties. 
+				colors         : selectedColor, // str    Filter images by color properties. A comma separated list of values may be used to select multiple properties. 
 									 // Accepted values: "grayscale", "transparent", "red", "orange", "yellow", "green", "turquoise", "blue", "lilac", "pink", "white", "gray", "black", "brown"
 
 				editors_choice : false, // bool   Select images that have received an Editor's Choice award. 
@@ -106,6 +121,8 @@
 		 */
 		_loadImages: function()
 		{
+			$('#free-images').html( '<div class="loader"></div>' );
+
 			var URL = 'https://pixabay.com/api/?' + $.param( FreeImages._get_api_params() );
 
 			$.ajax({
@@ -129,24 +146,11 @@
                     	$('#free-images').append( wp.template( 'free-images-list' )( hit ) );
                     });
 
-                	// Lazy Load
-                    $('#free-images img').Lazy({
-                        effect: 'fadeIn',
-                        // defaultImage: freeImages.placeholder,
-                        placeholder: true,
-                        beforeLoad: function(element) {
-                        	$(element).addClass('loading');
-                        },
-	                    afterLoad: function(element) {
-	                    	$(element).removeClass('loading').addClass('testing');
-	                    	$('#free-images').masonry('reload');
-	                    	FreeImages._initLightbox();
-	                    }
-                    });
-
                     $('#free-images').imagesLoaded()
                     .always( function( instance ) {
-                    	$('#free-images').masonry('reload');
+                    	var masonryObj = new Masonry( document.getElementById('free-images'), {
+	                        itemSelector: '.image'
+	                    });
 
                     	FreeImages._initLightbox();
         			})
@@ -184,7 +188,7 @@
 		_initLightbox: function()
 		{
 			$('#free-images').magnificPopup({
-				delegate: 'a.lightbox',
+				delegate: '.lightbox',
 				type: 'image',
 				tLoading: 'Loading image #%curr%...',
 				mainClass: 'free-images-lightbox mfp-img-mobile',
