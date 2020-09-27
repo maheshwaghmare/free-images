@@ -139,7 +139,7 @@
 }
 
 .free-images .image {
-    width: 25%;
+    width: 33.33%;
     position: relative;
 }
 
@@ -163,7 +163,7 @@
 
 .free-images .meta {
     color: #fff;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .free-images .activities {
@@ -253,7 +253,7 @@
 }
 
 .free-images .meta {
-    padding: 5px 10px;
+    padding: 10px 20px;
     margin: 0 5px;
     bottom: -4px;
 }
@@ -329,6 +329,11 @@
     margin-left: 10px;
 }
 
+#free-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .free-images .loader {
     border: 8px solid #c1c1c1;
     border-radius: 50%;
@@ -338,6 +343,9 @@
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
     margin: 70px auto 0 auto;
+    right: 0;
+    position: absolute;
+    left: 0;
 }
 
 /* Safari */
@@ -349,4 +357,105 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/**
+ * Color Filter
+ */
+.filter-colors {
+            flex-wrap: wrap;
+    align-content: flex-start;
+    width: 204px;
+    display: inline-block;
+        }
+        .filter-color > span:first-child {
+            display: inline-block;
+            padding: 10px;
+            float: none;
+        }
+        .filter-color-grayscale {
+            background: lightgray;
+        }
+        .filter-color-transparent {
+            background: transparent;
+        }
+        .filter-color-red {
+            background: red;
+        }
+        .filter-color-orange {
+            background: orange;
+        }
+        .filter-color-yellow {
+            background: yellow;
+        }
+        .filter-color-green {
+            background: green;
+        }
+        .filter-color-turquoise {
+            background: turquoise;
+        }
+        .filter-color-blue {
+            background: blue;
+        }
+        .filter-color-lilac {
+            background: #c8a2c8;
+        }
+        .filter-color-pink {
+            background: pink;
+        }
+        .filter-color-white {
+            background: white;
+        }
+        .filter-color-gray {
+            background: gray;
+        }
+        .filter-color-black {
+            background: black;
+        }
+        .filter-color-brown {
+            background: brown;
+        }
+.selected-color {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 10px;
+}
+.filter-color {
+    border: 1px solid #c6c4c4;
+    margin: 2px;
+    padding: 0px;
+    display: inline-flex;
+    float: none;
+}
+
+.filter-color-label {
+    display: none;
+}
+
+.filter-color-selected {
+    margin-left: 15px;
+}
+.filter-colors-wrap {
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    left: 15px;
+    padding: 15px;
+    top: 48px;
+    z-index: 9999999;
+    display: inline-block;
+    border: 1px solid #cccccc;
+    height: 51px;
+}
+
+.filter-color-wrap {
+    padding: 15px;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
 }

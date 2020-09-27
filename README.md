@@ -3,7 +3,7 @@ Contributors: Mahesh901122
 Tags: pixabay, stock images, images, photos, royalty images
 Donate link: https://www.paypal.me/mwaghmare7/
 Tested up to: 5.5
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 Requires at least: 4.4
 
 Stunning free images & royalty free stock for your own blog. Find suitable image as per your need from the 1.8+ million royalty free images library.
@@ -74,6 +74,9 @@ For more info check out the following:
 4. Click on 'Download' to download the image.
 
 == Changelog ==
+
+= 1.4.0 =
+* New: Added colors filter to filter images by color. See https://maheshwaghmare.com/doc/free-images-for-wordpress/#feature-filter-images-by-color
 
 = 1.3.0 =
 * New: Added the SafeSearch option to get only images suitable for all ages. Suggested by @Steve
