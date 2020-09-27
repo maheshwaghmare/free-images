@@ -76,7 +76,7 @@ For more info check out the following:
 == Changelog ==
 
 = 1.4.0 =
-* New: Added colors filter to filter images by color. See https://maheshwaghmare.com/doc/free-images-for-wordpress/#feature-filter-images-by-color
+* New: Added colors filter to filter images by color. See https://maheshwaghmare.com/doc/free-images-for-wordpress/#filter-images-by-color
 
 = 1.3.0 =
 * New: Added the SafeSearch option to get only images suitable for all ages. Suggested by @Steve
